@@ -1,1 +1,0 @@
-## Elektromanyetik Teori Problem Çözümü
