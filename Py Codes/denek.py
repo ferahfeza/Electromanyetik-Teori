@@ -1,16 +1,13 @@
+import matplotlib.pyplot as plt
 import numpy as np
-from numpy import linalg as LA
 
+   
+x = np.linspace(-2, 2, 100)
 
-P1 = [2,4,3]
-P2 = [-1,5,6]
+# calculate the y value for each element of the x vector
+y = x**2
 
-D = np.subtract(P2,P1)
-print("D=",D[0],"ax",D[1],"ay",D[2],"az")
+fig, ax = plt.subplots()
+ax.plot(x, y)
 
-D_gen = LA.norm(D)
-print(D_gen)
-
-aD = D / D_gen
-print(aD)
-
+plt.show()
